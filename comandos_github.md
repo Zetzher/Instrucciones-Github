@@ -17,7 +17,7 @@ Tenemos que pensar varias cosas, ¿Tenemos un repo creado, es un fork, lo hemos 
 
 Si vamos a crear un repositorio nuevo nos saldrá esto:
 
-
+https://github.com/Zetzher/Instrucciones-Github/blob/master/github_nuevo.png
 
 ## Ejecutando las pruebas ⚙️
 
