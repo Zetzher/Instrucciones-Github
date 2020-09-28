@@ -19,71 +19,43 @@ Si vamos a crear un repositorio nuevo nos saldrá esto:
 
 https://github.com/Zetzher/Instrucciones-Github/blob/master/github_nuevo.png
 
-## Ejecutando las pruebas ⚙️
+Una vez creado, tendremos que vincularlo nuestra versión local con nuestra versión en github, con lo que tenemos que hacer:
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+git remote add origin <link del repo>, en mi caso <git remote add origin https://github.com/Zetzher/Instrucciones-Github.git>;
 
 
+## Repositorio ya creado o realizado con fork
 
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+No hará falta que hagamos el comando git remote add origin con el link del repo porque ya está vinculado.
+
+
+### Comandos
+
+Cuando hacemos algún cambio que queremos que se refleje en nuestro repo de github:
+
+git add
+
+Y tenemos que tener varias opciones en cuenta:
+
+1. Si queremos subir todos los archivos utilizaremos <git add .>
+2. Si queremos subir un archivo o varios <git add <nombre del archivo>>
+
+Después tenemos que dejar un comentario:
+
+git commit -m <comentario>, por ejemplo, git commit -m "La imagen está redimensionada"
+
+Y por último:
+
+git push
+
+Ahora tenemos que tener una cosa en cuenta, queremos subirlo a la rama master o a otra rama:
+
+
+Si queremos subirlo a la rama master:
+
+git push origin master
+
+
+Y en el caso de que sea en otra rama:
+
+git push origin <nombre de la rama>, por ejemplo, git push origin julian
