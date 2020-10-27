@@ -38,7 +38,7 @@ Cuando hacemos algún cambio que queremos que se refleje en nuestro repo de gith
 Y tenemos que tener varias opciones en cuenta:
 
 1. Si queremos subir todos los archivos utilizaremos <**git add .**>
-2. Si queremos subir un archivo o varios <**git add** <**nombre del archivo**>>
+2. Si queremos subir un archivo o varios <**git add**> <**nombre del archivo**>
 
 Después tenemos que dejar un comentario:
 
